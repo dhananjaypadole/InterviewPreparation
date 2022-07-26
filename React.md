@@ -69,8 +69,7 @@ ReactDOM.render(container,rootElement);
 
 |  Functional Component (stateLess)   | Class Component  (stateFul) |
 | ----------------------------------  | --------------------------- |
-| A functional component is just a plain `JS function` that `accepts props` as an argument and `returns (jsx)` a React element(JSX).  |  A class component requires you to `extend from` React Component and create a `render function` which `returns a React element`. |   
-
+| A functional component is just a plain `JS function` that `accepts props` as an argument and `returns (jsx)` a React element(JSX).  |  A class component requires you to `extend from` React Component and create a `render function` which `returns a React element`. |
 | There is `no render` method used in functional components. | It must have the render() method returning JSX  |  
 
 |  `run from` top to bottom and once the function is returned it `cant be kept alive`. |  Class component is instantiated and different life cycle method is `kept alive` and being run and `invoked depending on phase` of class component.  |
