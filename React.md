@@ -66,6 +66,13 @@ ReactDOM.render(container,rootElement);
 
 ### 7) What are the differences between functional and class components?   
 
+Before the introduction of Hooks in React, functional components were called stateless components and were behind class components on a feature basis.  
+After the introduction of Hooks, functional components are equivalent to class components.  
+Although functional components are the new trend, the react team insists on keeping class components in React.
+
+_for this question in Detail refer_  
+
+[inDetail Q7](https://www.interviewbit.com/react-interview-questions/#freshers)
 
 |  Functional Component (stateLess)   | Class Component  (stateFul) |
 | ----------------------------------  | --------------------------- |
@@ -78,4 +85,21 @@ ReactDOM.render(container,rootElement);
 | ``` example: const [name,SetName]= React.useState(‘ ‘) ``` | ```example: constructor(props) {super(props);this.state = {name: ‘ ‘}} ``` |
 | `Constructors` are not used. | Constructor are used as it needs to store state. |
 
-_Note_ : `Hooks can only be used in functional components, not in-class components.`
+_Note_ : `Hooks can only be used in functional components, not in-class components.`  
+
+### 8) What is the virtual DOM? How does react use the virtual DOM to render the UI?
+
+_This is not Complete Answer for complete answe can visit website_
+
+- Frequent DOM manipulations are expensive and performance heavy.  
+- Virtual DOM is a virtual representation of the real DOM.  
+- When state changes occur, the virtual DOM is updated and the previous and current version of virtual DOM is compared. This is called `“diffing”`.  
+- The virtual DOM then sends a batch update to the real DOM to update the UI.  
+- React uses virtual DOM to enhance its performance.  
+- It uses the observable to detect state and prop changes.  
+- React uses an efficient diff algorithm to compare the versions of virtual DOM.  
+- It then makes sure that batched updates are sent to the real DOM for repainting or re-rendering of the UI.  
+
+[virtual DOM](https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2018/11/lnrn_0201.png?ssl=1)
+
+[complete article](https://programmingwithmosh.com/react/react-virtual-dom-explained/)
