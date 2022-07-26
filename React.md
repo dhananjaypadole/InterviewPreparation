@@ -100,6 +100,6 @@ _This is not Complete Answer for complete answe can visit website_
 - React uses an efficient diff algorithm to compare the versions of virtual DOM.  
 - It then makes sure that batched updates are sent to the real DOM for repainting or re-rendering of the UI.  
 
-[virtual DOM](https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2018/11/lnrn_0201.png?ssl=1)
+![virtual DOM Image](https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2018/11/lnrn_0201.png?ssl=1)
 
 [complete article](https://programmingwithmosh.com/react/react-virtual-dom-explained/)
