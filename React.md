@@ -70,23 +70,14 @@ ReactDOM.render(container,rootElement);
 |  Functional Component (stateLess)   | Class Component  (stateFul) |
 | ----------------------------------  | --------------------------- |
 | A functional component is just a plain `JS function` that `accepts props` as an argument and `returns (jsx)` a React element(JSX).  |  A class component requires you to `extend from` React Component and create a `render function` which `returns a React element`. |
-| There is `no render` method used in functional components. | It must have the render() method returning JSX  |  
-
-|  `run from` top to bottom and once the function is returned it `cant be kept alive`. |  Class component is instantiated and different life cycle method is `kept alive` and being run and `invoked depending on phase` of class component.  |
-
-| Also known as `Stateless components`. they are mainly responsible for `rendering UI`. | Also known as Stateful components because they implement logic and state. |
-
-|  `React lifecycle methods` (for example, componentDidMount) `cannot` be used in functional components. |  React lifecycle methods can be used inside class components (for example, componentDidMount). | 
-
-| `Hooks can be easily used` in functional components to make them Stateful. | It `requires different syntax` inside a class component to implement hooks. |
-| ``` example: const [name,SetName]= React.useState(‘ ‘) ``` | ```
+| There is `no render` method used in functional components. | It must have the render() method returning JSX  |
+|  `run from` top to bottom and once the function is returned it `cant be kept alive`. |  Class component is instantiated and different life cycle method is `kept alive` and being run and `invoked depending on phase` of class component.  || Also known as `Stateless components`. they are mainly responsible for `rendering UI`. | Also known as Stateful components because they implement logic and state. ||  `React lifecycle methods` (for example, componentDidMount) `cannot` be used in functional components. |  React lifecycle methods can be used inside class components (for example, componentDidMount). || `Hooks can be easily used` in functional components to make them Stateful. | It `requires different syntax` inside a class component to implement hooks. || ``` example: const [name,SetName]= React.useState(‘ ‘) ``` | ```
  example: constructor(props) {
 
    super(props);
 
    this.state = {name: ‘ ‘}
 
-} ``` | 
-| `Constructors` are not used. | Constructor are used as it needs to store state. |
+} ``` || `Constructors` are not used. | Constructor are used as it needs to store state. |
 
 _Note_ : `Hooks can only be used in functional components, not in-class components.`
